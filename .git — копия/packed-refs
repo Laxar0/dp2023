@@ -1,0 +1,8 @@
+# pack-refs with: peeled fully-peeled sorted 
+7cc03752d401ad828f4deb0dcc91c094c456115a refs/heads/lab1
+66767a652efaf112c2d8f40a08fb8f18a42b36b7 refs/heads/lab2
+66767a652efaf112c2d8f40a08fb8f18a42b36b7 refs/heads/lab2final
+66767a652efaf112c2d8f40a08fb8f18a42b36b7 refs/heads/lab2fixed
+66767a652efaf112c2d8f40a08fb8f18a42b36b7 refs/heads/main
+7cc03752d401ad828f4deb0dcc91c094c456115a refs/remotes/origin/lab2
+66767a652efaf112c2d8f40a08fb8f18a42b36b7 refs/remotes/origin/main
