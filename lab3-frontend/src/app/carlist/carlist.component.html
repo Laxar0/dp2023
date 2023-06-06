@@ -1,0 +1,25 @@
+<section class="list" id="list">
+  <div class="heading">
+    <h2>{{title}}</h2>
+  </div>
+  <ul>
+    <li *ngFor="let c of entityList" (click)="onSelect(c)">
+      {{c.id}}. <b>Зображення</b> {{c.img}} <b>Ім'я</b> {{c.name}} <b>Ціна</b> {{c.price}}
+      <span (click)="deleteCar(c)" class="delete">Видалити</span>
+    </li>
+  </ul>
+
+  <h2 (click)="showAddForm=!showAddForm" class="add-heading">Додати майно</h2>
+  <form *ngIf="showAddForm" #form1="ngForm" (ngSubmit)="addCar(form1.value)" class="add-form">
+    <input type="hidden" name="id" ngModel="-1">
+    <label for="img">Введіть назву файлу</label><br>
+    <input type="text" name="img" id="img" ngModel><br>
+    <label for="name">Введіть назву речі:</label><br>
+    <input type="text" name="name" id="name" ngModel><br>
+    <label for="price">Введіть ціну</label><br>
+    <input type="number" name="price" id="price" ngModel><br>
+    <input type="submit" class="btn" value="Add">
+  </form>
+
+  <app-update [entity]="selectedEntity" (updated)="updateEntityes()"></app-update>
+</section>

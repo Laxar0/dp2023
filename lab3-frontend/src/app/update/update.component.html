@@ -1,0 +1,13 @@
+<div *ngIf="entity">
+  <h2 class="update-heading">Оновити майно</h2>
+  <form class="update-form">
+    <input type="hidden" [(ngModel)]="entity.id">
+    <label for="img">Введіть нове ім'я файлу</label><br>
+    <input type="text" id="img" [(ngModel)]="entity.img"><br>
+    <label for="name">Введіть нове ім'я</label><br>
+    <input type="text" id="name" [(ngModel)]="entity.name"><br>
+    <label for="price">Введіть нову ціну</label><br>
+    <input type="number" id="price" [(ngModel)]="entity.price"><br>
+    <button (click)="updateEntity()" class="btn">Оновити</button>
+  </form>
+</div>
