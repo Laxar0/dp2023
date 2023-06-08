@@ -1,0 +1,17 @@
+<section class="entityes" id="entityes">
+  <div class="heading">
+    <h2>Our entityes</h2>
+  </div>
+
+  <!-- <a href="./lab6/api/list"><button class="btn">Click here to see the entityes</button></a> -->
+
+  <div class="shop-items">
+    <div class="shop-item" *ngFor="let entity of entityList">
+      <img src="{{entity.img}}" class="shop-item-image" alt="" />
+      <h3 class="shop-item-title">{{entity.name}}</h3>
+      <div class="shop-item-details">
+        <span class="shop-item-price">${{entity.price}}</span>
+      </div>
+    </div>
+  </div>
+</section>
